@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.8.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

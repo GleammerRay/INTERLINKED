@@ -43,6 +43,10 @@ Make sure to download the bot files before proceeding.
 2. Run `npm install` in the root of bot directory to install dependencies.
 3. Run `nodejs start_bot.json` to run the bot. 🏃
 
+### 4. Making backups
+
+All bot generated preferences including per-server preferences are saved in `usrprefs.json`. Make sure to back up this file regularly to avoid data loss. 
+
 ## Library
 
 Library exports:

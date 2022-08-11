@@ -1,4 +1,4 @@
-import { Interlinked, InterlinkedDiscordJSON } from './lib/ntinterlinked.js';
+import { Interlinked, InterlinkedDiscordJSON } from './lib/interlinked.js';
 import * as fs from 'fs';
 
 const configPath = 'config.json';

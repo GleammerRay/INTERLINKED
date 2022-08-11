@@ -33,7 +33,7 @@ Make sure to download the bot files before proceeding.
 2. Specify the `steamAppID` and `gameName` of your game in the `config.json`. Default values are for NEOTOKYO°.
 3. Specify your Discord bot token in `discordBotToken` in the `config.json`. You can get it from the bot section of your Discord application.
 4. Specify your [Steam API key](https://steamcommunity.com/dev/apikey) in `steamAPIKey` in `config.json`.
-5. If you wish to use different images, add the links of desired images to `activeImageURLs` and `fridayImageURLs` (will only show on fridays, if none are specified then images from `activeImageURLs are used).
+5. If you wish to use different images, add the links of desired images to `activeImageURLs` and `fridayImageURLs` (will only show on fridays, if none are specified then images from `activeImageURLs` are used).
 6. You are ready to run your bot! 🦸
 
 
@@ -46,11 +46,11 @@ Make sure to download the bot files before proceeding.
 ## Library
 
 Library exports:
-- `NTServer` - An active (>0 players) game server.
-- `NTServerList` - Contains a list of active game servers along with total server and player count. 
-- `NTIGuild` - A guild that uses the INTERLINKED bot. Contains guild preferences and methods to operate on them.
-- `NTIDiscordJSON` - Bot preferences as they are stored in JSON.
-- `NTIDiscord` - Bot preferences and methods to operate on them. An additional function can be specified to save preferences.
-- `NTInterlinked` - Discord bot. Provides `start()` and `stop()` methods.
+- `InterlinkedServer` - An active (>0 players) game server.
+- `InterlinkedServerList` - Contains a list of active game servers along with total server and player count. 
+- `InterlinkedGuild` - A guild that uses the INTERLINKED bot. Contains guild preferences and methods to operate on them.
+- `InterlinkedDiscordJSON` - Bot preferences as they are stored in JSON.
+- `InterlinkedDiscord` - Bot preferences and methods to operate on them. An additional function can be specified to save preferences.
+- `Interlinked` - Discord bot. Provides `start()` and `stop()` methods.
 
 #### Made with 💜 by Gleammer.

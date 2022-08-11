@@ -18,7 +18,7 @@ At first this was just a NEOTOKYO° pub bot, but now it supports *all* source ga
 
 ## Setting up your own INTERLINKED application
 
-In case you want to run the bot of your own for a game of your choice, you can!
+In case you want to run a bot of your own for a game of your choice, you can!
 
 Make sure to download the bot files before proceeding.
 

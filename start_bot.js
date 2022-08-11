@@ -1,4 +1,4 @@
-import { NTInterlinked, NTIDiscordJSON } from './lib/ntinterlinked.js';
+import { Interlinked, InterlinkedDiscordJSON } from './lib/ntinterlinked.js';
 import * as fs from 'fs';
 
 const configPath = 'config.json';
@@ -43,11 +43,13 @@ async function run() {
     fs.accessSync(prefsFilePath);
   } catch (e) {
     var _fd = fs.openSync(prefsFilePath, 'w+');
-    fs.writeSync(_fd, JSON.stringify(new NTIDiscordJSON().toJSON()));
+    fs.writeSync(_fd, JSON.stringify(new InterlinkedDiscordJSON().toJSON()));
     fs.closeSync(_fd);
   }
   
-  var _interlinked = new NTInterlinked(
+  var _interlinked = new Interlinked(
+    _config.steamAppID,
+    _config.gameName,
     _config.discordBotToken,
     _config.steamAPIKey,
     _config.activeImageURLs,

@@ -48,12 +48,7 @@ async function run() {
   }
   
   var _interlinked = new Interlinked(
-    _config.steamAppID,
-    _config.gameName,
-    _config.discordBotToken,
-    _config.steamAPIKey,
-    _config.activeImageURLs,
-    _config.fridayImageURLs,
+    _config,
     fs.readFileSync(prefsFilePath, { encoding: 'utf8', flag: 'r' }),
     (json) => onSave(json),
     (value) => onLog(value),

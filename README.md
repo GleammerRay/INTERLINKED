@@ -29,7 +29,7 @@ Make sure to download the bot files before proceeding.
 
 ### 2. Setting up the config
 
-1. Make a copy of `.config.json` named `config.json` (removing the dot in the beginning).
+1. Make a copy of `.config.json` named `config.json` (removing the dot in the beginning) or get one from the [INTERLINKED RESOURCES repository](https://github.com/GleammerRay/INTERLINKED-RESOURCES).
 2. Specify the `steamAppID` and `gameName` of your game in the `config.json`. Default values are for NEOTOKYO°.
 3. Specify your Discord bot token in `discordBotToken` in the `config.json`. You can get it from the bot section of your Discord application.
 4. Specify your [Steam API key](https://steamcommunity.com/dev/apikey) in `steamAPIKey` in `config.json`.

@@ -20,7 +20,7 @@ At first this was just a NEOTOKYO° pub bot, but now it supports *all* source ga
 
 In case you want to run a bot of your own for a game of your choice, you can!
 
-Make sure to download the bot files before proceeding.
+Make sure to download the [latest bot release](https://github.com/GleammerRay/INTERLINKED/releases) before proceeding.
 
 ### 1. Creating a link
 1. Go to [Discord Developer Portal - My Applications](https://discord.com/developers/applications) and create a new application. [A tutorial can be found here](https://github.com/discord-apps/bot-tutorial).
@@ -29,7 +29,7 @@ Make sure to download the bot files before proceeding.
 
 ### 2. Setting up the config
 
-1. Make a copy of `.config.json` named `config.json` (removing the dot in the beginning) or get one from the [INTERLINKED RESOURCES repository](https://github.com/GleammerRay/INTERLINKED-RESOURCES).
+1. Make a copy of `.config.json` named `config.json` (removing the dot in the beginning).
 2. Specify the `steamAppID` and `gameName` of your game in the `config.json`. Default values are for NEOTOKYO°.
 3. Specify your Discord bot token in `discordBotToken` in the `config.json`. You can get it from the bot section of your Discord application.
 4. Specify your [Steam API key](https://steamcommunity.com/dev/apikey) in `steamAPIKey` in `config.json`.
@@ -47,9 +47,16 @@ Make sure to download the bot files before proceeding.
 
 All bot generated preferences including per-server preferences are saved in `usrprefs.json`. Make sure to back up this file regularly to avoid data loss. 
 
+### 5. Updating
+
+1. [Download and extract the latest available release](https://github.com/GleammerRay/INTERLINKED/releases).
+2. Copy your `config.json` and `usrprefs.json` from old installation to the newly acquired release.
+3. Enjoy the newest features! ⚡
+
 ## Library
 
 Library exports:
+- `InterlinkedConfig` - INTERLINKED bot configuration.
 - `InterlinkedServer` - An active (>0 players) game server.
 - `InterlinkedServerList` - Contains a list of active game servers along with total server and player count. 
 - `InterlinkedGuild` - A guild that uses the INTERLINKED bot. Contains guild preferences and methods to operate on them.

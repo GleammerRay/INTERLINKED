@@ -1,6 +1,6 @@
 # INTERLINKED
 
-At first this was just a NEOTOKYO° pub bot, but now it supports *all* source game servers! 🌌
+At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/NEOTOKYO/) pub bot, but now it supports *all* source game servers! 🌌
 
 ![](https://github.com/GleammerRay/NTInterlinked/raw/main/assets/poster.png)
 

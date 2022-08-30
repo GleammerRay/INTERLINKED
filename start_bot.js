@@ -10,11 +10,7 @@ function onSave(json) {
   fs.writeFileSync(prefsFilePath, JSON.stringify(json));
 }
 
-function onLog(value) {
-  console.log(value);
-}
-
-async function run() {
+function run() {
   try {
     fs.accessSync(configPath);
   } catch (err) {
@@ -51,7 +47,7 @@ async function run() {
     _config,
     fs.readFileSync(prefsFilePath, { encoding: 'utf8', flag: 'r' }),
     (json) => onSave(json),
-    (value) => onLog(value),
+    console.log,
   );
   _interlinked.start();
 }

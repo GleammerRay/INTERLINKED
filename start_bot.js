@@ -24,7 +24,7 @@ function _displayHelp() {
     '\n-s / --save-log\n	Save script log to a file.\n	Default path is \'bot.log\' in parent directory, custom path can be specified with \'-o\'.' +
     '\n-o / --output <filepath>	Specify a custom log output file path instead of \'bot.log\'.' +
     '\n-r / --restart			Automatically restart this script on crash.' +
-    '\n--raw\n	Execute a raw run.\n	The script will ignore all options and its output will not be unformatted.'
+    '\n--raw\n	Execute a raw run.\n	The script will ignore all options and its output will not be formatted.'
   );
 }
 

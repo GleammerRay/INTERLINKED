@@ -7,7 +7,14 @@ At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/
 ## Contents
 1. [Setting up the bot in Discord](#setting-up-the-bot-in-discord)
 2. [Setting up your own INTERLINKED application](#setting-up-your-own-interlinked-application)
-3. [Library](#library)
+   1. [Creating a link](#1-creating-a-link)
+   2. [Setting up the config](#2-setting-up-the-config)
+   3. [Running the bot with NodeJS](#3-running-the-bot-with-nodejs)
+   4. [Making backups](#4-making-backups)
+   5. [Updating](#5-updating)
+   6. [Logging](#6-logging)
+3. [Command line arguments](#command-line-arguments)
+4. [Library](#library)
 
 ## Setting up the bot in Discord
 1. Invite one of the currently available bots:
@@ -52,6 +59,28 @@ All bot generated preferences including per-server preferences are saved in `usr
 1. [Download and extract the latest available release](https://github.com/GleammerRay/INTERLINKED/releases).
 2. Copy your `config.json` and `usrprefs.json` from old installation to the newly acquired release.
 3. Enjoy the newest features! ⚡
+
+### 6. Logging
+
+By default, INTERLINKED is logging to your console.
+
+If you wish to save the log, specify the `-s` or `--save-log` argument when running the bot. The log will then be saved to `bot.log` inside bot's directory.
+
+Log message types:
+- `I` - Informational message: contains relevant information about what the bot is doing.
+- `W` - Warning: notifies about something that can cause runtime issues.
+- `E` - Error: an unresolved runtime error. The bot will keep working, but it's behaviour is not guaranteed.
+- `F` - Fatal error: an error that caused the bot to crash.
+- `S` - System message: contains relevant information about the bot process.
+
+## Command line arguments
+
+- `-h` / `--help` - Display help page.
+- `-q` / `--quiet` - Do not log info and warnings into console. The '-s' option will not be affected.
+- `-s` / `--save-log` - Save script log to a file. Default path is './bot.log', custom path can be specified with '-o'.
+- `-o` / `--output <filepath>` - Specify a custom log output file path instead of 'bot.log'.
+- `-r` / `--restart` - Automatically restart the script on crash.
+- `--raw` - Execute a raw run. The script will ignore all options and its output will not be unformatted.
 
 ## Library
 

@@ -1,4 +1,5 @@
+/node_modules/
 idea.txt
 usrprefs.json
 config.json
-/node_modules/
+bot.log

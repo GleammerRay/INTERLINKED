@@ -21,7 +21,7 @@ function _displayHelp() {
     'Options:' +
     '\n-h / --help			Display this page.' +
     '\n-q / --quiet\n Do not log info and warnings into console.\n  The \'-s\' option will not be affected.' +
-    '\n-s / --save-log\n	Save script log to a file.\n	Default path is \'./bot.log\', custom path can be specified with \'-o\'.' +
+    '\n-s / --save-log\n	Save script log to a file.\n	Default path is \'bot.log\' in parent directory, custom path can be specified with \'-o\'.' +
     '\n-o / --output <filepath>	Specify a custom log output file path instead of \'bot.log\'.' +
     '\n-r / --restart			Automatically restart this script on crash.' +
     '\n--raw\n	Execute a raw run.\n	The script will ignore all options and its output will not be unformatted.'

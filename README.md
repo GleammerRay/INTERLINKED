@@ -58,7 +58,7 @@ All bot generated preferences including per-server preferences are saved in `usr
 
 1. [Download and extract the latest available release](https://github.com/GleammerRay/INTERLINKED/releases).
 2. Copy your `config.json` and `usrprefs.json` from old installation to the newly acquired release.
-3. Enjoy the newest features! ⚡
+3. Enjoy the latest features! ⚡
 
 ### 6. Logging
 
@@ -69,18 +69,18 @@ If you wish to save the log, specify the `-s` or `--save-log` argument when runn
 Log message types:
 - `I` - Informational message: contains relevant information about what the bot is doing.
 - `W` - Warning: notifies about something that can cause runtime issues.
-- `E` - Error: an unresolved runtime error. The bot will keep working, but it's behaviour is not guaranteed.
+- `E` - Error: an unresolved runtime error. The bot will keep working, but its behaviour is not guaranteed.
 - `F` - Fatal error: an error that caused the bot to crash.
 - `S` - System message: contains relevant information about the bot process.
 
 ## Command line arguments
 
 - `-h` / `--help` - Display help page.
-- `-q` / `--quiet` - Do not log info and warnings into console. The '-s' option will not be affected.
-- `-s` / `--save-log` - Save script log to a file. Default path is './bot.log', custom path can be specified with '-o'.
-- `-o` / `--output <filepath>` - Specify a custom log output file path instead of 'bot.log'.
+- `-q` / `--quiet` - Do not log info and warnings into console. The `-s` option will not be affected.
+- `-s` / `--save-log` - Save script log to a file. Default path is `bot.log` in parent directory, custom path can be specified with `-o`.
+- `-o` / `--output <filepath>` - Specify a custom log output file path instead of `bot.log`.
 - `-r` / `--restart` - Automatically restart the script on crash.
-- `--raw` - Execute a raw run. The script will ignore all options and its output will not be unformatted.
+- `--raw` - Execute a raw run. The script will ignore all options and its output will not be formatted.
 
 ## Library
 

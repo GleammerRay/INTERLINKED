@@ -6,22 +6,58 @@ At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/
 
 ## Contents
 1. [Setting up the bot in Discord](#setting-up-the-bot-in-discord)
-2. [Setting up your own INTERLINKED application](#setting-up-your-own-interlinked-application)
+2. [Discord slash commands](#discord-slash-commands)
+   - [User commands](#user-commands)
+   - [Admin commands](#admin-commands)
+3. [INTERLINKED variables](#interlinked-variables)
+4. [Setting up your own INTERLINKED application](#setting-up-your-own-interlinked-application)
    1. [Creating a link](#1-creating-a-link)
    2. [Setting up the config](#2-setting-up-the-config)
    3. [Running the bot with NodeJS](#3-running-the-bot-with-nodejs)
    4. [Making backups](#4-making-backups)
    5. [Updating](#5-updating)
    6. [Logging](#6-logging)
-3. [Command line arguments](#command-line-arguments)
-4. [Library](#library)
+5. [Command line arguments](#command-line-arguments)
+6. [Library](#library)
 
 ## Setting up the bot in Discord
 1. Invite one of the currently available bots:
-   - [NEOTOKYO°](https://discord.com/api/oauth2/authorize?client_id=1005270180768792716&permissions=268437504&scope=bot)
+   - [NEOTOKYO° (Official)](https://discord.com/api/oauth2/authorize?client_id=1005270180768792716&permissions=268437504&scope=bot) - by Gleammer#5946
+   - [Fortress Forever](https://discord.com/api/oauth2/authorize?client_id=1017091888521695272&permissions=268437504&scope=bot) - by philchute#7727
 2. Go to `Server Settings` -> `Integrations` -> `Bots and Apps` -> `<game name> INTERLINKED`.
 3. Set channels and roles for commands that you want to use.
 4. Enjoy! 🍻
+
+## Discord slash commands
+
+### User commands
+
+- `/help` - List all available commands.
+- `/update` - Get a list of active game servers.
+- `/pub` - Add ping role for user.
+- `/unpub` - Remove ping role for user.
+- `/get` - Get an INTERLINKED variable.
+
+### Admin commands
+
+- `/reset` - Reset an INTERLINKED variable.
+- `/set` - Set an INTERLINKED variable for this guild.
+- `/subscribe` - Subscribe channel to receive automatic updates about active game servers.
+- `/unsubscribe` - Unsubscribe channel from receiving automatic updates about active game servers.
+- `/blacklist` - Blacklist a server from the servers list.
+- `/unblacklist` - Unblacklist a server from the servers list.
+
+## INTERLINKED variables
+
+- `admin_role` - Role that has access to INTERLINKED admin-only commands.
+- `max_server_count` - Maximum number of servers in the server list.
+- `subscribed_channels` - Channels subscribed to receive automatic server updates.
+- `min_player_count` - Minimum player count to trigger suscription feed.
+- `subscription_feed_min_rate` - Minimum time between two automatic updates.
+- `ping_role` - Role that that is pinged about active game servers.
+- `ping_min_rate` - Minimum time between two pings.
+- `ping_min_player_count` - Minimum player count to trigger ping.
+- `blacklist` - Blacklisted servers.
 
 ## Setting up your own INTERLINKED application
 

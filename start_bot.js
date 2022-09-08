@@ -51,26 +51,29 @@ function runRaw() {
     log('F:Config not found under \'config.json\'\n');
     process.exit(1);
   }
-  var _config = eval(`(${fs.readFileSync('config.json')})`);
+  var _config = null;
+  try {
+    _config = JSON.parse(readFileSync('config.json'));
+  }
+  catch {
+    log('F:Invalid JSON in \'config.json\'\n');
+    process.exit(1);
+  }
   if (_config.discordBotToken == null) {
     log(discordBotTokenErrMsg);
     process.exit(1);
-    return;
   }
   if (_config.discordBotToken == '') {
     log(discordBotTokenErrMsg);
     process.exit(1);
-    return;
   }
   if (_config.steamAPIKey == null) {
     log(steamAPIKeyErrMsg);
     process.exit(1);
-    return;
   }
   if (_config.steamAPIKey == '') {
     log(steamAPIKeyErrMsg);
     process.exit(1);
-    return;
   }
   
   try {

@@ -48,7 +48,7 @@ Make sure to download the [latest bot release](https://github.com/GleammerRay/IN
 
 1. Get [NodeJS](https://nodejs.org/en/download/) (and npm if you're on linux).
 2. Run `npm install` in the root of bot directory to install dependencies.
-3. Run `nodejs start_bot.js` to run the bot. 🏃
+3. Run `node start_bot.js` to run the bot. 🏃
 
 ### 4. Making backups
 

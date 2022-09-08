@@ -1,9 +1,5 @@
-//const fs = require('fs');
-//const util = require('util');
-
 import * as fs from 'fs';
 import * as path from'path';
-import * as util from 'util';
 import { spawn } from 'child_process';
 import { Interlinked, InterlinkedDiscordJSON } from './lib/interlinked.js';
 
@@ -53,10 +49,10 @@ function runRaw() {
   }
   var _config = null;
   try {
-    _config = JSON.parse(readFileSync('config.json'));
+    _config = JSON.parse(fs.readFileSync('config.json'));
   }
-  catch {
-    log('F:Invalid JSON in \'config.json\'\n');
+  catch (e) {
+    log(`F:Invalid JSON in \'config.json\'\n${e}\n`);
     process.exit(1);
   }
   if (_config.discordBotToken == null) {

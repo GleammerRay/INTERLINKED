@@ -83,7 +83,7 @@ Make sure to download the [latest bot release](https://github.com/GleammerRay/IN
 ### 3. Running the bot with NodeJS
 
 1. Get [NodeJS](https://nodejs.org/en/download/) (and npm if you're on linux).
-2. Run `npm install` in the root of bot directory to install dependencies.
+2. Run `npm ci` in the root of bot directory to install dependencies.
 3. Run `node start_bot.js` to run the bot. 🏃
 
 ### 4. Making backups
@@ -93,8 +93,9 @@ All bot generated preferences including per-server preferences are saved in `usr
 ### 5. Updating
 
 1. [Download and extract the latest available release](https://github.com/GleammerRay/INTERLINKED/releases).
-2. Copy your `config.json` and `usrprefs.json` from old installation to the newly acquired release.
-3. Enjoy the latest features! ⚡
+2. Run `npm ci` in the root of bot directory to install dependencies.
+3. Copy your `config.json` and `usrprefs.json` from old installation to the newly acquired release.
+4. Enjoy the latest features! ⚡
 
 ### 6. Logging
 
@@ -121,7 +122,6 @@ Log message types:
 ## Library
 
 Library exports:
-- `InterlinkedConfig` - INTERLINKED bot configuration.
 - `InterlinkedServer` - An active (>0 players) game server.
 - `InterlinkedServerList` - Contains a list of active game servers along with total server and player count. 
 - `InterlinkedGuild` - A guild that uses the INTERLINKED bot. Contains guild preferences and methods to operate on them.

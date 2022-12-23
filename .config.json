@@ -1,9 +1,8 @@
 {
   "discordBotToken": "",
+  "steamAPIKey": "",
   "steamAppID": "244630",
   "gameName": "NEOTOKYO°",
-  "steamMasterServerAddress": "hl2master.steampowered.com:27011",
-  "steamQueryMaxServers": 50,
   "activeImageURLs": [
     "https://steamcdn-a.akamaihd.net/steam/apps/244630/ss_37c74c51b12bfb9c10c5e82da61e369193b41bec.1920x1080.jpg?t=1500853608",
     "https://th.bing.com/th/id/R.b5a37cb6c27dd0df7349030a756e4207?rik=FPl0V4sq5KtIig&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f96%2f76%2fgdtkio.jpg&ehk=hV1peL7cjjtYJO5O1hruuotX%2b9xKTfxJS97yecsHAiU%3d&risl=&pid=ImgRaw&r=0",

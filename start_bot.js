@@ -5,6 +5,7 @@ import { Interlinked, InterlinkedDiscordJSON } from './lib/interlinked.js';
 
 const configPath = path.join(process.cwd(), 'config.json');
 const discordBotTokenErrMsg = 'F:Discord bot token not found in \'config.json\'\n';
+const steamAPIKeyErrMsg = 'F:Steam API key not found in \'config.json\'\n';
 const prefsFilePath = path.join(process.cwd(), 'usrprefs.json');
 
 var isQuiet = false;
@@ -60,6 +61,14 @@ function runRaw() {
   }
   if (_config.discordBotToken == '') {
     log(discordBotTokenErrMsg);
+    process.exit(1);
+  }
+  if (_config.steamAPIKey == null) {
+    log(steamAPIKeyErrMsg);
+    process.exit(1);
+  }
+  if (_config.steamAPIKey == '') {
+    log(steamAPIKeyErrMsg);
     process.exit(1);
   }
   

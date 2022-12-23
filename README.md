@@ -75,7 +75,7 @@ Make sure to download the [latest bot release](https://github.com/GleammerRay/IN
 1. Make a copy of `.config.json` named `config.json` (removing the dot in the beginning).
 2. Specify the `steamAppID` and `gameName` of your game in the `config.json`. Default values are for NEOTOKYO°.
 3. Specify your Discord bot token in `discordBotToken` in the `config.json`. You can get it from the bot section of your Discord application.
-4. If the default value for `steamMasterServerAddress` does not work, please consult with [1.3 Master servers](https://developer.valvesoftware.com/wiki/Master_Server_Query_Protocol#Master_servers) on Master Server Query Protocol at Valve developer community wiki.
+4. Specify your [Steam API key](https://steamcommunity.com/dev/apikey) in `steamAPIKey` in `config.json`.
 5. If you wish to use different images, add the links of desired images to `activeImageURLs`, `fridayImageURLs` (will only show on fridays, if none are specified then images from `activeImageURLs` are used) and `mapImageURLs` (add entries in format `"<map name>": "<image url>"` (without angle brackets)).
 6. You are ready to run your bot! 🦸
 
@@ -83,7 +83,7 @@ Make sure to download the [latest bot release](https://github.com/GleammerRay/IN
 ### 3. Running the bot with NodeJS
 
 1. Get [NodeJS](https://nodejs.org/en/download/) (and npm if you're on linux).
-2. Run `npm ci` in the root of bot directory to install dependencies.
+2. Run `npm install` in the root of bot directory to install dependencies.
 3. Run `node start_bot.js` to run the bot. 🏃
 
 ### 4. Making backups
@@ -93,9 +93,8 @@ All bot generated preferences including per-server preferences are saved in `usr
 ### 5. Updating
 
 1. [Download and extract the latest available release](https://github.com/GleammerRay/INTERLINKED/releases).
-2. Run `npm ci` in the root of bot directory to install dependencies.
-3. Copy your `config.json` and `usrprefs.json` from old installation to the newly acquired release.
-4. Enjoy the latest features! ⚡
+2. Copy your `config.json` and `usrprefs.json` from old installation to the newly acquired release.
+3. Enjoy the latest features! ⚡
 
 ### 6. Logging
 
@@ -122,6 +121,7 @@ Log message types:
 ## Library
 
 Library exports:
+- `InterlinkedConfig` - INTERLINKED bot configuration.
 - `InterlinkedServer` - An active (>0 players) game server.
 - `InterlinkedServerList` - Contains a list of active game servers along with total server and player count. 
 - `InterlinkedGuild` - A guild that uses the INTERLINKED bot. Contains guild preferences and methods to operate on them.

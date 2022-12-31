@@ -10,15 +10,16 @@ At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/
    - [User commands](#user-commands)
    - [Admin commands](#admin-commands)
 3. [INTERLINKED variables](#interlinked-variables)
-4. [Setting up your own INTERLINKED application](#setting-up-your-own-interlinked-application)
+4. [Hiding your server from INTERLINKED bots](#hiding-your-server-from-interlinked-bots)
+5. [Setting up your own INTERLINKED application](#setting-up-your-own-interlinked-application)
    1. [Creating a link](#1-creating-a-link)
    2. [Setting up the config](#2-setting-up-the-config)
    3. [Running the bot with NodeJS](#3-running-the-bot-with-nodejs)
    4. [Making backups](#4-making-backups)
    5. [Updating](#5-updating)
    6. [Logging](#6-logging)
-5. [Command line arguments](#command-line-arguments)
-6. [Library](#library)
+6. [Command line arguments](#command-line-arguments)
+7. [Library](#library)
 
 ## Setting up the bot in Discord
 1. Invite one of the currently available bots:
@@ -58,6 +59,14 @@ At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/
 - `ping_min_rate` - Minimum time between two pings.
 - `ping_min_player_count` - Minimum player count to trigger ping.
 - `blacklist` - Blacklisted servers.
+
+## Hiding your server from INTERLINKED bots
+
+Starting from v4.0.0, INTERLINKED will never show your server in the list if it is password protected or unreachable. You're safe out there, Hammer mappers!
+
+If you are forwarding your server port outside of your host network for a server without a password but wish to hide your server from the INTERLINKED lists, please put `[test]` or `[nodiscovery]` with any case combination into your server name like this: `Playing NEOTOKYO° with friends [TesT]`. This will cause v4.1.0+ INTERLINKED bots to ignore your server and it will not appear in any lists.
+
+Do note that your server can still be discovered via the steam server list, so if you're worried about being doxxed, just don't port forward!
 
 ## Setting up your own INTERLINKED application
 

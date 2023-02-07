@@ -82,7 +82,7 @@ Make sure to download the [latest bot release](https://github.com/GleammerRay/IN
 ### 2. Setting up the config
 
 1. Make a copy of `.config.json` named `config.json` (removing the dot in the beginning).
-2. Specify the `steamAppID` and `gameName` of your game in the `config.json`. Default values are for NEOTOKYO°.
+2. Specify the `steamAppID` and `gameName` of your game in the `config.json`. You can specify a certain `steamGameDir` value for some source mods/game modes. Default values are for NEOTOKYO°.
 3. Specify your Discord bot token in `discordBotToken` in the `config.json`. You can get it from the bot section of your Discord application.
 4. Specify your [Steam API key](https://steamcommunity.com/dev/apikey) in `steamAPIKey` in `config.json`.
 5. If you wish to use different images, add the links of desired images to `activeImageURLs`, `fridayImageURLs` (will only show on fridays, if none are specified then images from `activeImageURLs` are used) and `mapImageURLs` (add entries in format `"<map name>": "<image url>"` (without angle brackets)).

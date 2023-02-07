@@ -2,6 +2,7 @@
   "discordBotToken": "",
   "steamAPIKey": "",
   "steamAppID": "244630",
+  "steamGameDir": "",
   "gameName": "NEOTOKYO°",
   "activeImageURLs": [
     "https://steamcdn-a.akamaihd.net/steam/apps/244630/ss_37c74c51b12bfb9c10c5e82da61e369193b41bec.1920x1080.jpg?t=1500853608",

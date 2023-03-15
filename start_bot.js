@@ -60,8 +60,7 @@ function runRaw() {
     process.exit(1);
   }
   if (_config.discordBotToken == '') {
-    log(discordBotTokenErrMsg);
-    process.exit(1);
+    log('W:Discord bot token is empty, will not use Discord bot features.\n');
   }
   if (_config.steamAPIKey == null) {
     log(steamAPIKeyErrMsg);

@@ -18,6 +18,7 @@ At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/
    4. [Making backups](#4-making-backups)
    5. [Updating](#5-updating)
    6. [Logging](#6-logging)
+   7. [Webdev Stuff](#7-webdev-stuff)
 6. [Command line arguments](#command-line-arguments)
 7. [Library](#library)
 
@@ -120,6 +121,10 @@ Log message types:
 - `E` - Error: an unresolved runtime error. The bot will keep working, but its behaviour is not guaranteed.
 - `F` - Fatal error: an error that caused the bot to crash.
 - `S` - System message: contains relevant information about the bot process.
+
+### 7. Webdev Stuff
+
+Default config for INTERLINKED has enabled support for Discord embed JSON file generation - `"outputEmbedJSONPath": "embed.json"`. This means that every server refresh an embed file will be generated and saved as `embed.json` in current directory. Future JSON to HTML conversion support is planned.
 
 ## Command line arguments
 

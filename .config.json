@@ -1,5 +1,6 @@
 {
   "discordBotToken": "",
+  "outputEmbedJSONPath": "embed.json",
   "steamAPIKey": "",
   "steamAppID": "244630",
   "steamGameDir": "",

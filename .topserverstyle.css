@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&family=Source+Code+Pro:wght@700&display=swap');
+body {
+  background-color: white;
+}
+.image-cropper {
+  display: inline-block;
+  width: 30;
+  height: 30;
+  position: relative;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.code {
+  background-color: lightgray !important;
+  border-radius: 4px !important;
+  font-family: 'Source Code Pro', monospace !important;
+  font-weight: 700 !important;
+}
+.embed-author {
+}
+.embed-author-iconurl {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+.embed-author-name {
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  margin: 5;
+  position: absolute;
+  color: black;
+  text-decoration: underline;
+}
+.embed-content {
+  position: absolute;
+}
+.embed-status {
+  margin-top: 5;
+  margin-bottom: 5;
+}
+.embed-status-label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+.embed-status-value {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.embed-topserver {
+  margin-top: 5;
+}
+.embed-topserver-title {
+  margin-top: 5;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+.embed-topserver-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+.embed-topserver-label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+.embed-topserver-value {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.embed-footer {
+  margin: 5
+}
+.embed-footer-iconurl {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+.embed-footer-text {
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  margin: 5;
+  position: absolute;
+  color: grey;
+}

@@ -1,6 +1,8 @@
 {
   "discordBotToken": "",
   "outputEmbedJSONPath": "embed.json",
+  "topServersHTMLStylePath": ".topserverstyle.css",
+  "outputTopServersHTMLPath": "topserver.html",
   "steamAPIKey": "",
   "steamAppID": "244630",
   "steamGameDir": "",

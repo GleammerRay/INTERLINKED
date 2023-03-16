@@ -5,22 +5,40 @@ At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/
 ![](https://github.com/GleammerRay/NTInterlinked/raw/main/assets/poster.png)
 
 ## Contents
-1. [Setting up the bot in Discord](#setting-up-the-bot-in-discord)
-2. [Discord slash commands](#discord-slash-commands)
+1. [Embedding INTERLINKED in your website](#embedding-interlinked-in-your-website)
+2. [Setting up the bot in Discord](#setting-up-the-bot-in-discord)
+3. [Discord slash commands](#discord-slash-commands)
    - [User commands](#user-commands)
    - [Admin commands](#admin-commands)
-3. [INTERLINKED variables](#interlinked-variables)
-4. [Hiding your server from INTERLINKED bots](#hiding-your-server-from-interlinked-bots)
-5. [Setting up your own INTERLINKED application](#setting-up-your-own-interlinked-application)
+4. [INTERLINKED variables](#interlinked-variables)
+5. [Hiding your server from INTERLINKED bots](#hiding-your-server-from-interlinked-bots)
+6. [Setting up your own INTERLINKED application](#setting-up-your-own-interlinked-application)
    1. [Creating a link](#1-creating-a-link)
    2. [Setting up the config](#2-setting-up-the-config)
    3. [Running the bot with NodeJS](#3-running-the-bot-with-nodejs)
    4. [Making backups](#4-making-backups)
    5. [Updating](#5-updating)
    6. [Logging](#6-logging)
-   7. [Webdev Stuff](#7-webdev-stuff)
-6. [Command line arguments](#command-line-arguments)
-7. [Library](#library)
+   7. [Want to embed INTERLINKED in your website?](#7-want-to-embed-interlinked-in-your-website)
+7. [Command line arguments](#command-line-arguments)
+8. [Library](#library)
+
+## Embedding INTERLINKED in your website
+
+If set up, live stats from INTERLINKED bots can be embedded using `<iframe>` tags (see [Want to embed INTERLINKED in your website?](#7-want-to-embed-interlinked-in-your-website)).
+
+Add the following code to your website's body to embed INTERLINKED:
+```
+<iframe src="one of the INTERLINKED embed URLs from below here"
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0" 
+    scrolling="auto"
+    height="375"></iframe>
+```
+
+Currently available embed URLs:
+1. **NEOTOKYO° (Official)** -  https://gleammerray.github.io/interlinked/neotokyo/top-server.html - by Gleammer#5946
 
 ## Setting up the bot in Discord
 1. Invite one of the currently available bots:
@@ -98,6 +116,8 @@ Make sure to download the [latest bot release](https://github.com/GleammerRay/IN
 2. Run `npm ci` in the root of bot directory to install dependencies.
 3. Run `node start_bot.js` to run the bot. 🏃
 
+Make sure to run the bot
+
 ### 4. Making backups
 
 All bot generated preferences including per-server preferences are saved in `usrprefs.json`. Make sure to back up this file regularly to avoid data loss. 
@@ -122,9 +142,11 @@ Log message types:
 - `F` - Fatal error: an error that caused the bot to crash.
 - `S` - System message: contains relevant information about the bot process.
 
-### 7. Webdev Stuff
+### 7. Want to embed INTERLINKED in your website?
 
-Default config for INTERLINKED has enabled support for Discord embed JSON file generation - `"outputEmbedJSONPath": "embed.json"`. This means that every server refresh an embed file will be generated and saved as `embed.json` in current directory. Future JSON to HTML conversion support is planned.
+Default config for INTERLINKED has enabled support for Discord embed JSON file generation - `"outputEmbedJSONPath": "embed.json"`. This means that every server refresh an embed file will be generated and saved as `embed.json` in current directory.
+
+Default config for INTERLINKED has enabled support for top server file generation - `"outputTopServersHTMLPath": "topserver.html"`. The HTML is generated every server refresh and saved as `topserver.html` in current directory.
 
 ## Command line arguments
 

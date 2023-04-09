@@ -109,14 +109,11 @@ Make sure to download the [latest bot release](https://github.com/GleammerRay/IN
 5. If you wish to use different images, add the links of desired images to `activeImageURLs`, `fridayImageURLs` (will only show on fridays, if none are specified then images from `activeImageURLs` are used) and `mapImageURLs` (add entries in format `"<map name>": "<image url>"` (without angle brackets)).
 6. You are ready to run your bot! 🦸
 
-
 ### 3. Running the bot with NodeJS
 
 1. Get [NodeJS](https://nodejs.org/en/download/) (and npm if you're on linux).
 2. Run `npm ci` in the root of bot directory to install dependencies.
 3. Run `node start_bot.js` to run the bot. 🏃
-
-Make sure to run the bot
 
 ### 4. Making backups
 

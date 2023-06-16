@@ -24,7 +24,7 @@ body {
   display: block;
   margin: 0 auto;
   height: auto;
-  width: 100%;
+  width: 30px;
 }
 .embed-author-name {
   text-decoration: none;
@@ -32,6 +32,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   margin: 5;
+  padding-top: 3px;
+  padding-left: 7px;
   position: absolute;
   color: black;
   text-decoration: underline;
@@ -80,7 +82,7 @@ body {
   display: block;
   margin: 0 auto;
   height: auto;
-  width: 100%;
+  width: 30px;
 }
 .embed-footer-text {
   text-decoration: none;
@@ -88,6 +90,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   margin: 5;
+  padding-top: 1px;
+  padding-left: 7px;
   position: absolute;
   color: grey;
 }

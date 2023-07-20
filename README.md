@@ -68,6 +68,7 @@ Currently available embed URLs:
 - `/unsubscribe` - Unsubscribe channel from receiving automatic updates about active game servers.
 - `/blacklist` - Blacklist a server from the servers list.
 - `/unblacklist` - Unblacklist a server from the servers list.
+- `/server_list` - Create a message that will show live info from up to 15 servers
 
 ## INTERLINKED variables
 

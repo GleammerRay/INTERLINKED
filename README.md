@@ -69,6 +69,7 @@ Currently available embed URLs:
 - `/blacklist` - Blacklist a server from the servers list.
 - `/unblacklist` - Unblacklist a server from the servers list.
 - `/server_list` - Create a message that will show live info from up to 15 servers.
+- `/game_list` - Create message(s) that will show info from Undead Games Hub.
 
 ## INTERLINKED variables
 

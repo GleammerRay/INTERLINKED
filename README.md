@@ -1,3 +1,5 @@
+https://undeadgames.github.io
+
 # INTERLINKED
 
 At first this was just a [NEOTOKYO°](https://store.steampowered.com/app/244630/NEOTOKYO/) pub bot, but now it supports *all* source game servers! 🌌
@@ -46,6 +48,7 @@ Currently available embed URLs:
    - [Fortress Forever](https://discord.com/api/oauth2/authorize?client_id=1017091888521695272&permissions=268437504&scope=bot) - by philchute#7727
    - [Garry's Mod 9](https://discord.com/oauth2/authorize?client_id=818122885595791382&permissions=268437504&scope=bot) - by mv#7803
    - [Dystopia](https://discord.com/api/oauth2/authorize?client_id=1059513754150244352&permissions=268437504&scope=bot) - by Fairy#7777
+   - [Resistance and Liberation](https://discord.com/api/oauth2/authorize?client_id=1130578616372187137&permissions=268437504&scope=bot) - by shoubishock
 2. Go to `Server Settings` -> `Integrations` -> `Bots and Apps` -> `<game name> INTERLINKED`.
 3. Set channels and roles for commands that you want to use.
 4. Enjoy! 🍻

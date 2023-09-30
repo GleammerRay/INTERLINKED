@@ -8,6 +8,9 @@
   "steamAPIKey": "",
   "steamAppID": "244630",
   "steamGameDir": "",
+  "steamGameTypes": {
+    "all": []
+  },
   "gameName": "NEOTOKYO°",
   "logoURL": "default",
   "gameListURL": "default",

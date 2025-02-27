@@ -1,4 +1,5 @@
 {
+  "dbPath": "usrprefs",
   "discordBotToken": "",
   "outputEmbedJSONPath": "embed.json",
   "topServersHTMLStylePath": ".topserverstyle.css",

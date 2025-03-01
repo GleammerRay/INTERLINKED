@@ -166,16 +166,27 @@ function main() {
   }
   
   async function runBot(onClose = null) {
+    var _exiting = false;
     var child = spawn('node', ['start_bot.js', '--raw']);
+    process.on('SIGINT', () => {
+      child.kill('SIGINT');
+      _exiting = true;
+    });
+    process.on('SIGTERM', () => {
+      child.kill('SIGTERM');
+      _exiting = true;
+    });
     child.stdout.on('data', (data) => {
       log(data);
     });  
     child.stderr.on('data', (data) => {
       log(`F:\n ${data}`);
-    });  
+    });
     child.on('close', (code) => {
       log(`S:Bot exited with code ${code}.\n`);
-      if (onClose != null) onClose();
+      if (code == 0) process.exit(0);
+      if (onClose != null) onClose(code);
+      if (_exiting) process.exit(code);
     });
   }
   
@@ -188,7 +199,7 @@ function main() {
     return;
   }
   
-  runBot();
+  runBot((code) => process.exit(code));
 }
 
 main();

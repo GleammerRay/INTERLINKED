@@ -85,6 +85,18 @@ function runRaw() {
     (json) => onSave(json),
     console.log,
   );
+  var _exitDone = false;
+  function exit() {
+    if (_exitDone) return;
+    _exitDone = true;
+    _interlinked.stop();
+    console.log('S:Waiting 5 seconds for any file operations to finish.');
+    setTimeout((function() {
+      return process.exit(0);
+    }), 5000);
+  }
+  process.on('SIGINT', () => exit());
+  process.on('SIGTERM', () => exit());
   _interlinked.start();
 }
 

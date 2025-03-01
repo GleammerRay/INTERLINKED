@@ -1,0 +1,43 @@
+import * as common from '../common.js';
+Object.assign(global, common);
+
+const commandSignatures = [
+  {
+    name: 'template',
+    description: 'Useful command - Lorem Ipsum',
+    dm_permission: false,
+    type: 1,
+  },
+];
+
+const buttonSignatures = [
+/*
+  {
+    id: 'template',
+  },
+*/
+];
+
+class Command {
+  rest;
+  db;
+  burstStackManager;
+
+  constructor(options) {
+    this.rest = options.rest;
+    this.db = options.db;
+    this.burstStackManager = options.burstStackManager;
+  }
+
+  async execute(interaction) {
+    // TODO: implement command execution
+    return await this.rest.createEphemeralInteractionResponse(interaction, { content: 'Hello World!【=◕‿↼✿=】' });
+  }
+
+  async executeButton(interaction) {
+    const customId = interaction.data.custom_id.split(' ');
+    //
+  }
+}
+
+export { commandSignatures, buttonSignatures, Command };
